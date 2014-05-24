@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<config>
+    <sections>
+        <tegdesign_redirects translate="label">
+            <label>404 Suffix Redirects</label>
+            <tab>advanced</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>1000</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <suffix_redirect translate="label">
+                    <label>404 Suffix Redirects</label>
+                    <comment><![CDATA[<p>This module is designed to allow intelligent redirects on 404 pages without suffixes like .html if suffixes are enabled in the system config.</p>]]></comment>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>100</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <enabled translate="label comment">
+                            <label>Enabled</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </enabled>
+                    </fields>
+                </suffix_redirect>
+            </groups>
+        </tegdesign_redirects>
+    </sections>
+</config>

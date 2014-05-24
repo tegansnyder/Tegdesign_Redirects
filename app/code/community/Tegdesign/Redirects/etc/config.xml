@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Tegdesign_Redirects>
+            <version>0.1.0</version>
+            <depends></depends>
+        </Tegdesign_Redirects>
+    </modules>
+    <global>
+        <helpers>
+            <tegdesign_redirects>
+                <class>Tegdesign_Redirects_Helper</class>
+            </tegdesign_redirects>
+        </helpers>
+    </global>
+    <frontend>
+        <routers>
+            <cms>
+                <args>
+                    <modules>
+                        <Tegdesign_Redirects before="Mage_Cms">Tegdesign_Redirects_Cms</Tegdesign_Redirects>
+                    </modules>
+                </args>
+            </cms>
+        </routers>
+    </frontend>
+    <default>
+        <tegdesign_redirects>
+            <suffix_redirect>
+                <enabled>0</enabled>
+            </suffix_redirect>
+        </tegdesign_redirects>
+    </default>
+</config>
